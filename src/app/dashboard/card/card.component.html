@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title> Dashboard Card</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th></th>
+                    <th></th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let Contact of contacts">
+                    <td>{{ Contact.first }}</td>
+                    <td>{{ Contact.last }}</td>
+                    <td></td>
+                    <td>{{ Contact.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card-content>
+</mat-card>

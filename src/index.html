@@ -1,0 +1,54 @@
+<!--<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Helloappstore</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root>Loading...</app-root>
+</body>
+</html>
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Helloappstore</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- Add a script to delay the app-root -->
+  <script>
+    // Function to delay the app-root
+    function delayAppRoot() {
+      // Select the app-root element
+      var appRoot = document.querySelector('app-root');
+      
+      // Hide the app-root initially
+      appRoot.style.display = 'none';
+
+      // Set a timeout to show the app-root after 5 seconds
+      setTimeout(function() {
+        appRoot.style.display = 'block';
+      }, 3000);
+
+      //appRoot.style.display = 'flex';
+    }
+
+    // Call the function when the window is loaded
+    window.onload = delayAppRoot;
+    appRoot.style.display = 'flex';
+  </script>
+
+  <!-- app-root element -->
+  <app-root>Loading...</app-root>
+</body>
+</html>

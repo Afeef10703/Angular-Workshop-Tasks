@@ -1,0 +1,9 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: first baseline;
+    height: 100vh;
+}
+.cont {
+    text-align: center;
+}
